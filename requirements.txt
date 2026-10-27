@@ -1,0 +1,16 @@
+pandas
+numpy
+scipy
+matplotlib
+seaborn
+requests
+pyarrow
+statsmodels
+scikit-learn
+arch
+torch
+jupyter
+fastapi
+uvicorn
+streamlit
+plotly
