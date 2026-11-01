@@ -1,6 +1,6 @@
 # Indian Market Risk & Forecast Desk — Project Report
 
-*TSDA Mini Project. Group members: <add names and roll numbers>. Registered title: <confirm in the class Google Sheet>.*
+*Time Series Data Analysis (TSDA) mini-project. Code, notebook and screenshots are in this repository; see the [README](../README.md) to run it.*
 
 ## 1. Problem and users
 Equity-index prices are close to a random walk, so "predict tomorrow's NIFTY" is a poor product. What people can use is a reliable
@@ -61,7 +61,7 @@ VaR is a little too optimistic at 95% in a turbulent year. GARCH QLIKE 0.508 bea
 **Latest state (as of 2026-10-23):** NIFTY 50 22,600, 14.2% below its peak in the 2015+ window; forecast annualised volatility 14.7% (percentile rank 68), 1-day 95% VaR 1.40%, 99% VaR 2.28%, India VIX 16.9; no anomaly in the last 30 days.
 
 ## 6. Application and decision support
-The Streamlit frontend calls a FastAPI backend, so every chart and number is computed on request for the chosen index and date range. Use case (screenshots in `screenshots/`):
+The Streamlit frontend calls a FastAPI backend, so every chart and number is computed on request for the chosen index and date range. Use case (screenshots in [`screenshots/`](../screenshots/)):
 an investor selects NIFTY 50 and a 12% target volatility; the dashboard shows forecast volatility 14.7%, 95% VaR 1.40% and suggests holding about 82% of normal
 exposure (volatility targeting: target ÷ forecast vol, capped at 200%); alerts trigger for high volatility percentile, high VIX, deep drawdown or recent extreme moves.
 
@@ -73,4 +73,4 @@ exposure (volatility targeting: target ÷ forecast vol, capped at 200%); alerts 
 * Future: CSV upload for any series, sector-VAR spillover alerts, scheduled alert emails, additional models (SARIMAX with VIX as exogenous input).
 
 ## 8. Reproducibility
-See `README.md`. Both the notebook and the app run end to end on the data above.
+See the [README](../README.md). Both the notebook and the app run end to end on the data above.
